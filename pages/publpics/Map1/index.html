@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="css/leaflet-search.css">
         <style>
         #map {
-            width: 650px;
-            height: 700px;
+            width: 675px;
+            height: 690px;
         }
         </style>
         <title></title>
@@ -72,13 +72,16 @@
         function pop_MergedCentroids_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['county'] !== null ? Autolinker.link(String(feature.properties['county'])) : '') + '</td>\
+                        <th scope="row">county</th>\
+                        <td>' + (feature.properties['county'] !== null ? Autolinker.link(String(feature.properties['county'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['DnstySt'] !== null ? Autolinker.link(String(feature.properties['DnstySt'])) : '') + '</td>\
+                        <th scope="row">DnstySt</th>\
+                        <td>' + (feature.properties['DnstySt'] !== null ? Autolinker.link(String(feature.properties['DnstySt'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Code'] !== null ? Autolinker.link(String(feature.properties['Code'])) : '') + '</td>\
+                        <th scope="row">Code</th>\
+                        <td>' + (feature.properties['Code'] !== null ? Autolinker.link(String(feature.properties['Code'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
