@@ -1,6 +1,6 @@
 ---
 layout: frontpage
-title: David Comont
+title: Herbicide resistant Black-grass
 description: Testbed for website design
 keywords: Broman, QTL, R/qtl, quantitative trait loci, statistics, statistical genetics, recombination
 ---
