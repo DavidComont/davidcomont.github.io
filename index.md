@@ -20,26 +20,25 @@ keywords: Broman, QTL, R/qtl, quantitative trait loci, statistics, statistical g
 <table class="wide">
 <tr>
   <td class="left">
-    <a href="pages/publpics/iplotCorr.html">
-        <img src="assets/publpics/Picture1.png" alt="R/qtlcharts example" title="R/qtlcharts example"/>
+    <a href="pages/publpics/ResistanceMechanisms.html">
+        <img src="assets/publpics/Picture1.png" alt="Resistance mechanisms" title="Resistance mechanisms"/>
     </a>
   </td>
   <td class="right">
-    <a href="pages/publpics/mppdiag_fig4.html">
-        <img src="assets/publpics/Picture2.png" alt="Broman et
-        al. (2019) Fig 4" title="Broman et al. (2019) Fig 4"/>
+    <a href="pages/publpics/ResistanceMaps.html">
+        <img src="assets/publpics/Picture2.png" alt="Resistance maps" title="Resistance maps"/>
     </a>
   </td>
 </tr>
 <tr>
   <td class="left">
-    <a href="pages/publpics/samplemixups_fig7.html">
-        <img src="assets/publpics/Picture3.png" alt="Broman et al. (2015) Fig 7" title="Broman et al. (2015) Fig 7"/>
+    <a href="pages/publpics/AbundanceMaps.html">
+        <img src="assets/publpics/Picture3.png" alt="Abundance maps" title="Abundance maps"/>
     </a>
   </td>
   <td class="right">
-    <a href="pages/publpics/rqtl2_fig1.html">
-        <img src="assets/publpics/Picture4.png" alt="Broman et al. (2019) Fig 1c" title="Broman et al. (2019) Fig 1c"/>
+    <a href="pages/publpics/AgronomicData.html">
+        <img src="assets/publpics/Picture4.png" alt="Agronomic data" title="Agronomic data"/>
     </a>
   </td>
 </tr>
