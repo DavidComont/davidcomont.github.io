@@ -1,6 +1,6 @@
 ---
 layout: frontpage
-title: Karl Broman
+title: Herbicide resistant Blackgrass
 ---
 
 <div class="navbar">
