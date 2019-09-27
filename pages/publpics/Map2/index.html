@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-search.css">
+        <style>
+        #map {
+            width: 675px;
+            height: 690px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-search.js"></script>
+        <script src="data/greatbritain_0.js"></script>
+        <script src="data/2019_1.js"></script>
+        <script src="data/Centroids_2.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[50.49524610763524,-3.7239650411631935],[54.431084656675644,5.916373749786053]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        function pop_greatbritain_0(feature, layer) {
+        }
+
+        function style_greatbritain_0_0() {
+            return {
+                pane: 'pane_greatbritain_0',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(196,196,196,1.0)',
+            }
+        }
+        map.createPane('pane_greatbritain_0');
+        map.getPane('pane_greatbritain_0').style.zIndex = 400;
+        map.getPane('pane_greatbritain_0').style['mix-blend-mode'] = 'normal';
+        var layer_greatbritain_0 = new L.geoJson(json_greatbritain_0, {
+            attribution: '',
+            pane: 'pane_greatbritain_0',
+            onEachFeature: pop_greatbritain_0,
+            style: style_greatbritain_0_0,
+        });
+        bounds_group.addLayer(layer_greatbritain_0);
+        map.addLayer(layer_greatbritain_0);
+        function pop_2019_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['county'] !== null ? Autolinker.link(String(feature.properties['county'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['year'] !== null ? Autolinker.link(String(feature.properties['year'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['crop'] !== null ? Autolinker.link(String(feature.properties['crop'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_2019_1_0(feature) {
+            switch(String(feature.properties['q2wHide_DnstySt'])) {
+                case '0':
+                    return {
+                pane: 'pane_2019_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,245,240,1.0)',
+            }
+                    break;
+                case 'l':
+                    return {
+                pane: 'pane_2019_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(253,204,184,1.0)',
+            }
+                    break;
+                case 'm':
+                    return {
+                pane: 'pane_2019_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(252,143,111,1.0)',
+            }
+                    break;
+                case 'h':
+                    return {
+                pane: 'pane_2019_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(244,77,55,1.0)',
+            }
+                    break;
+                case 'v':
+                    return {
+                pane: 'pane_2019_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(197,22,27,1.0)',
+            }
+                    break;
+                default:
+                    return {
+                pane: 'pane_2019_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(103,0,13,1.0)',
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_2019_1');
+        map.getPane('pane_2019_1').style.zIndex = 401;
+        map.getPane('pane_2019_1').style['mix-blend-mode'] = 'normal';
+        var layer_2019_1 = new L.geoJson(json_2019_1, {
+            attribution: '',
+            pane: 'pane_2019_1',
+            onEachFeature: pop_2019_1,
+            style: style_2019_1_0,
+        });
+        bounds_group.addLayer(layer_2019_1);
+        map.addLayer(layer_2019_1);
+        function pop_Centroids_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['county'] !== null ? Autolinker.link(String(feature.properties['county'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['year'] !== null ? Autolinker.link(String(feature.properties['year'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['crop'] !== null ? Autolinker.link(String(feature.properties['crop'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Code'] !== null ? Autolinker.link(String(feature.properties['Code'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Centroids_2_0() {
+            return {
+                pane: 'pane_Centroids_2',
+                radius: 4.0,
+                stroke: false,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(231,113,72,0.0)',
+            }
+        }
+        map.createPane('pane_Centroids_2');
+        map.getPane('pane_Centroids_2').style.zIndex = 402;
+        map.getPane('pane_Centroids_2').style['mix-blend-mode'] = 'normal';
+        var layer_Centroids_2 = new L.geoJson(json_Centroids_2, {
+            attribution: '',
+            pane: 'pane_Centroids_2',
+            onEachFeature: pop_Centroids_2,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_Centroids_2_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_Centroids_2);
+        map.addLayer(layer_Centroids_2);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'2019<br /><table><tr><td style="text-align: center;"><img src="legend/2019_1_00.png" /></td><td>0</td></tr><tr><td style="text-align: center;"><img src="legend/2019_1_l1.png" /></td><td>l</td></tr><tr><td style="text-align: center;"><img src="legend/2019_1_m2.png" /></td><td>m</td></tr><tr><td style="text-align: center;"><img src="legend/2019_1_h3.png" /></td><td>h</td></tr><tr><td style="text-align: center;"><img src="legend/2019_1_v4.png" /></td><td>v</td></tr><tr><td style="text-align: center;"><img src="legend/2019_1_5.png" /></td><td></td></tr></table>': layer_2019_1,'<img src="legend/greatbritain_0.png" /> greatbritain': layer_greatbritain_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        map.addControl(new L.Control.Search({
+            layer: layer_Centroids_2,
+            initial: false,
+            hideMarkerOnCollapse: true,
+            propertyName: 'Code'}));
+        document.getElementsByClassName('search-button')[0].className +=
+         ' fa fa-binoculars';
+        </script>
+    </body>
+</html>
