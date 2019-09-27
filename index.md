@@ -48,7 +48,7 @@ keywords: Broman, QTL, R/qtl, quantitative trait loci, statistics, statistical g
 <div class="navbar">
   <div class="navbar-inner">
       <ul class="nav">
-          <li><a href="morefigs.html">more figures</a></li>
+          <li><a href="morefigs.html">more information</a></li>
       </ul>
   </div>
 </div>
