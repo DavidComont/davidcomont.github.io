@@ -1,6 +1,6 @@
 ---
 layout: frontpage
-title: Resistance Mechanisms
+title: Resistance Mapping
 ---
 
 Herbicide resistance mapping text to go here

@@ -1,12 +1,12 @@
 ---
 layout: frontpage
-title: Resistance Mechanisms
+title: Abundance Mapping
 ---
 
 Abundance mapping text to go here
 
 
-<div class = "leaflet-map">
-    <iframe src="Map2/index.html" width="700" height="700"> </iframe>
-</div>
+<html>
+<iframe src="http://90.246.197.78:3838/AbundanceFields" width="850px" height="1000px" frameborder="0"></iframe>
+</html>
 
