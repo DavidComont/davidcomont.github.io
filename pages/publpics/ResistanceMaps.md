@@ -5,7 +5,9 @@ title: Resistance Mechanisms
 
 Herbicide resistance mapping text to go here
 
-<div class = "leaflet-map">
-    <iframe src="Map1/index.html" width="700" height="700"> </iframe>
-</div>
-
+<html>
+<head><title>Shiny App Iframe</title></head>
+<body>
+<iframe id="example1" src="90.246.197.78:3838/ResistanceMaps" style="border: none; width: 100%; height: 850px" frameborder="0"></iframe>
+</body>
+</html>
