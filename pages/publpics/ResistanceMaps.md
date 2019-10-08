@@ -10,7 +10,7 @@ Herbicide resistance mapping text to go here
 </html>
 
 <html>
-<iframe src="192.168.1.21:3838/ResistanceMaps" width="100%" height="850px"></iframe>
+<iframe src="https://gallery.shinyapps.io/051-movie-explorer" width="100%" height="850px"></iframe>
 </html>
 
 </div>
