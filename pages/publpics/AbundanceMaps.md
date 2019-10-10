@@ -7,6 +7,10 @@ Abundance mapping text to go here
 
 
 <html>
-<iframe src="http://90.246.197.78:3838/AbundanceFields" width="850px" height="1000px" frameborder="0"></iframe>
+<iframe src="http://90.246.197.78:3838/AbundanceBench" width="850px" height="1000px" frameborder="0"></iframe>
+</html>
+
+<html>
+<iframe src="http://90.246.197.78:3838/ResistanceBench" width="850px" height="1000px" frameborder="0"></iframe>
 </html>
 
