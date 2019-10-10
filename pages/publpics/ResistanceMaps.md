@@ -3,11 +3,6 @@ layout: frontpage
 title: Resistance Mapping
 ---
 
-body {
-    left-margin: 0;
-    padding: 0;
-}
-
 Herbicide resistance mapping text to go here
 Have to enable unsecure content in the browser
 
