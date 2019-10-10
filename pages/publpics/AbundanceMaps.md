@@ -1,5 +1,5 @@
 ---
-layout: newpage
+layout: frontpage
 title: Abundance Mapping
 ---
 
