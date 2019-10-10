@@ -1,6 +1,6 @@
 /* Custom container */
 .container-narrow {
-  margin: 0 auto;
+  margin: 10px 0 auto;
   max-width: 2000px; }
 
 .container-narrow > hr {
