@@ -15,7 +15,7 @@ title: Abundance Mapping
   </div>
 </div>
 
-Abundance mapping text to go here
+Abundance mapping text to go here. This is proof-of-concept. Data is entirely made up and not to be takee literally!
 
 
 <html>
