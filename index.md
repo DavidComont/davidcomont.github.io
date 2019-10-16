@@ -1,8 +1,6 @@
 ---
 layout: frontpage
-title: Herbicide resistant Black-grass
-description: Testbed for website design
-keywords: Broman, QTL, R/qtl, quantitative trait loci, statistics, statistical genetics, recombination
+title: Abundance Mapping
 ---
 
 <div class="navbar">
@@ -17,37 +15,17 @@ keywords: Broman, QTL, R/qtl, quantitative trait loci, statistics, statistical g
   </div>
 </div>
 
-<table class="wide">
-<tr>
-  <td class="left">
-    <a href="pages/publpics/ResistanceMechanisms.html">
-        <img src="assets/publpics/Picture1.png" alt="Resistance mechanisms" title="Resistance mechanisms"/>
-    </a>
-  </td>
-  <td class="right">
-    <a href="pages/publpics/ResistanceMaps.html">
-        <img src="assets/publpics/Picture2.png" alt="Resistance maps" title="Resistance maps"/>
-    </a>
-  </td>
-</tr>
-<tr>
-  <td class="left">
-    <a href="pages/publpics/AbundanceMaps.html">
-        <img src="assets/publpics/Picture3.png" alt="Abundance maps" title="Abundance maps"/>
-    </a>
-  </td>
-  <td class="right">
-    <a href="pages/publpics/AgronomicData.html">
-        <img src="assets/publpics/Picture4.png" alt="Agronomic data" title="Agronomic data"/>
-    </a>
-  </td>
-</tr>
-</table>
+Abundance mapping text to go here. This is proof-of-concept. Data is entirely made up and not to be taken literally!
 
-<div class="navbar">
-  <div class="navbar-inner">
-      <ul class="nav">
-          <li><a href="morefigs.html">more information</a></li>
-      </ul>
-  </div>
-</div>
+
+<html>
+<iframe src="http://90.246.197.78:3838/AbundanceBench" width="1800px" height="950px" frameborder="0"></iframe>
+</html>
+
+<html>
+<iframe src="http://90.246.197.78:3838/ResistanceBench" width="1800px" height="1000px" frameborder="0"></iframe>
+</html>
+
+<html>
+<iframe src="http://90.246.197.78:3838/ManagementBench" width="1800px" height="500px" frameborder="0"></iframe>
+</html>
